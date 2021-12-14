@@ -1,0 +1,28 @@
+{
+	"name": "argon2d16k-hash-js",
+	"version": "1.0.0",
+	"description": "Performs the Argon2d16000 hashing algorithm used by the Alterdot cryptocurrency in JavaScript.",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Alterdot/argon2d16k-hash-js.git"
+	},
+	"scripts": {
+		"build": "node-gyp rebuild",
+		"test": "mocha --timeout 10000 --full-trace --check-leaks test.js"
+	},
+	"dependencies": {
+		"bindings": "*",
+		"nan": "^2.14.1"
+	},
+	"devDependencies": {
+		"chai": "^3.5.0",
+		"mocha": "^5.2.0"
+	},
+	"keywords": [
+		"argon2d",
+		"argon2d16k"
+	],
+	"author": "alterdot.network",
+	"license": "MIT"
+}
