@@ -1,26 +1,22 @@
-# **Argon2d16k Hashing Library**
+# **Argon2d16k Node.js Hashing Library**
 
 ![ADOT Logo](https://github.com/Alterdot/Alterdot/blob/master/src/qt/res/icons/bitcoin.png)
 
 **Copyright (c) 2021 [Alterdot Network](https://alterdot.network/)**
 
-What is argon2d16k-hash-js?
+What is argon2d16k-hash-node?
 -----------------------------
-A Node.js module that performs the Argon2d16000 hashing algorithm used by the Alterdot cryptocurrency.
+A native Node.js module that performs the Argon2d16000 hashing algorithm used by the Alterdot cryptocurrency.
 
 
 Installation Instructions
 -------------------------
 
-It can be installed via the Node.js Package Manager (NPM) by using the command:
+It can be installed by cloning this repository from Github and then installing locally using NPM:
 
-```$ npm install @Alterdot/argon2d16k-hash-js```
+```$ git clone https://github.com/Alterdot/argon2d16k-hash-node```
 
-or by cloning from Github and installing locally using NPM:
-
-```$ git clone https://github.com/Alterdot/argon2d16k-hash-js```
-
-```$ cd argon2d16k-hash-js```
+```$ cd argon2d16k-hash-node```
 
 ```$ npm install```
 
@@ -29,16 +25,16 @@ Usage
 -----
 In order to produce the hash of a string of data, you can use the following:
 ```js
-var argon2d16k = require('argon2d16k-hash-js');
+var argon2d16k = require('argon2d16k-hash-node');
 let buf = Buffer.from("There's a starman in the sky", 'utf8');
 let hash = argon2d.argon2d(buf);
 console.log(hash);
 // should return <Buffer 0d 01 c4 09 bd 11 f1 07 d0 e9 41 ca c3 bd bf 3e ed 02 0f 9e ca d2 2b 8a 8f a0 eb 3a e2 2c b1 e0>
 // or
-var argon2d16k = require('argon2d16k-hash-js');
+var argon2d16k = require('argon2d16k-hash-node');
 let hash = argon2d16k.digest("There's a starman in the sky");
 console.log(hash);
-// should return ""
+// should return "06957ef254c45e7f059b573a796a7446d0d4133d8f86c02972f4eb7a402be103"
 ```
 
 ### argon2d16k.digest(str)
@@ -83,9 +79,9 @@ Specifies the format and type of the return value:
 
 Credits, Sources
 -------
-zone117x - https://github.com/zone117x/node-multi-hashing
-duality-solutions - https://github.com/duality-solutions/argon2d-dynamic
-dashpay - https://github.com/dashpay/x11-hash-js
+zone117x - https://github.com/zone117x/node-multi-hashing  
+duality-solutions - https://github.com/duality-solutions/argon2d-dynamic  
+dashpay - https://github.com/dashpay/x11-hash-js  
 
 
 License
